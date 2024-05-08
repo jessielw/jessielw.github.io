@@ -16,7 +16,6 @@
 body {
   margin: 0;
   padding: 0;
-  /* background-color: #1f1f1f; */
 }
 
 .container {
@@ -31,20 +30,23 @@ body {
 }
 
 header {
-  height: 10%;
+  height: 15%;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
 header h1 {
-  /* display: flex; */
   font-weight: 400;
   font-size: 1.6rem;
-  /* align-items: center; */
-  /* right: 0;
-  top: 0; */
+}
+
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .hr {
@@ -57,7 +59,7 @@ header h1 {
 }
 
 main {
-  height: calc(90% - 6px);
+  height: calc(85% - 6px);
   width: 100%;
 }
 
@@ -99,19 +101,19 @@ main p {
   color: var(--body-text-color);
 }
 
-.github-link {
+.link {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
   color: var(--a-color);
 }
 
-.github-link:hover {
+.link:hover {
   color: var(--a-hovered);
   text-decoration: underline;
 }
 
-.github-link svg {
+.link svg {
   width: 1em;
   height: 1em;
   margin-right: 0.3em;
@@ -154,8 +156,15 @@ main p {
     max-width: 576px;
   }
 
-  .search-div {
-    justify-content: flex-end;
+  header {
+    flex-direction: row;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
   }
 }
 
