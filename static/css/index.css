@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-text-color: #000000;
+  --body-text-color: #4d4d4d;
+  --a-color: #1500ff;
+  --a-visited: #a020f0;
+  --a-hovered: red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #1f1f1f; */
+}
+
+.container {
+  width: 90vw;
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header h1 {
+  /* display: flex; */
+  font-weight: 400;
+  font-size: 1.6rem;
+  /* align-items: center; */
+  /* right: 0;
+  top: 0; */
+}
+
+.hr {
+  border-color: #e8e8e86a;
+  width: 100%;
+}
+
+.small-hr {
+  width: 95%;
+}
+
+main {
+  height: calc(90% - 6px);
+  width: 100%;
+}
+
+main h2 {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+main h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.italic-span {
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+main li {
+  font-size: 0.95rem;
+  color: var(--body-text-color);
+  margin: 5px;
+}
+
+.profile-picture {
+  height: 120px;
+  width: 120px;
+  position: relative;
+  margin: -10px 0 0 15px;
+  float: right;
+  border-radius: 50%;
+  align-self: center;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--body-text-color);
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--a-color);
+}
+
+.github-link:hover {
+  color: var(--a-hovered);
+  text-decoration: underline;
+}
+
+.github-link svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.3em;
+}
+
+.updated-span {
+  width: 100%;
+  display: inline-flex;
+  justify-content: end;
+  font-weight: 400;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--body-text-color);
+}
+
+/* .nav-div {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.small-nav {
+  display: flex;
+  align-items: center;
+}
+
+.small-nav svg {
+  fill: lightgrey;
+} */
+
+/* This is the default above */
+/* Extra small devices (phones, 576px and down) */
+/* @media (max-width: 576px) {
+} */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+
+  .search-div {
+    justify-content: flex-end;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 600px;
+  }
+
+  /* .small-nav {
+    display: none;
+  }
+
+  .large-nav {
+    display: flex;
+  }
+
+  .dropdown-content {
+    top: 100%;
+    min-width: 50px;
+    right: auto;
+  } */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+/* Extra extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 800px;
+  }
+}
