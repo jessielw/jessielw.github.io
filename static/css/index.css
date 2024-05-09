@@ -108,7 +108,7 @@ main p {
   color: var(--a-color);
 }
 
-.link:hover {
+.link:hover, .link:visited:hover {
   color: var(--a-hovered);
   text-decoration: underline;
 }
