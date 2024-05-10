@@ -45,6 +45,7 @@
 .comparison-img-box img {
   cursor: pointer;
   transition: transform 0.3s ease;
+  border-radius: 5px;
 }
 
 .comparison-img-box img:hover {
