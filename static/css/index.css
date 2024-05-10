@@ -6,6 +6,7 @@
 }
 
 :root {
+  --body-color: #fff;
   --header-text-color: #000000;
   --body-text-color: #4d4d4d;
   --a-color: #1500ff;
@@ -16,6 +17,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--body-color);
 }
 
 .container {
@@ -36,11 +38,33 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+#dark-mode,
+#light-mode {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 20px;
+  fill: var(--header-text-color);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#light-mode {
+  display: none;
+}
+
+#dark-mode:hover,
+#light-mode:hover {
+  transform: rotate(30deg);
 }
 
 header h1 {
   font-weight: 400;
   font-size: 1.6rem;
+  color: var(--header-text-color);
 }
 
 nav {
@@ -68,17 +92,20 @@ main {
 main h2 {
   font-weight: 500;
   font-size: 1.3rem;
+  color: var(--header-text-color);
 }
 
 main h3 {
   font-weight: 600;
   font-size: 1rem;
+  color: var(--header-text-color);
 }
 
 .italic-span {
   font-style: italic;
   font-size: 0.9rem;
   font-weight: 400;
+  color: var(--header-text-color);
 }
 
 main li {
