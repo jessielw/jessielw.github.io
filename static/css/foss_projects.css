@@ -7,16 +7,6 @@
   color: var(--a-color);
 }
 
-/* .img-link:hover, .img-link:visited:hover {
-    color: var(--a-hovered);
-    text-decoration: underline;
-}
-
-.img-link:visited {
-    color: var(--a-visited);
-    text-decoration: underline;
-} */
-
 .img-link img {
   width: auto;
   height: 50px;
@@ -49,6 +39,15 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.comparison-img-box img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.comparison-img-box img:hover {
+  transform: scale(1.02);
 }
 
 @media (min-width: 576px) {

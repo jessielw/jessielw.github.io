@@ -108,7 +108,8 @@ main p {
   color: var(--a-color);
 }
 
-.link:hover, .link:visited:hover {
+.link:hover,
+.link:visited:hover {
   color: var(--a-hovered);
   text-decoration: underline;
 }
@@ -128,22 +129,6 @@ main p {
   font-style: italic;
   color: var(--body-text-color);
 }
-
-/* .nav-div {
-  display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
-  height: 100%;
-}
-
-.small-nav {
-  display: flex;
-  align-items: center;
-}
-
-.small-nav svg {
-  fill: lightgrey;
-} */
 
 /* This is the default above */
 /* Extra small devices (phones, 576px and down) */
@@ -180,20 +165,6 @@ main p {
   .container {
     max-width: 600px;
   }
-
-  /* .small-nav {
-    display: none;
-  }
-
-  .large-nav {
-    display: flex;
-  }
-
-  .dropdown-content {
-    top: 100%;
-    min-width: 50px;
-    right: auto;
-  } */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
