@@ -9,7 +9,7 @@
 
 .img-link img {
   width: auto;
-  height: 50px;
+  height: 35px;
   align-self: center;
   transition: transform 0.3s ease;
 }
@@ -31,13 +31,14 @@
 
 .tech-img-box img {
   height: auto;
-  width: 90%;
+  width: 60%;
   border-radius: 5px;
 }
 
 .comparison-img-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 6px;
 }
 
