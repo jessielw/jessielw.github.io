@@ -31,7 +31,7 @@
 
 .tech-img-box img {
   height: auto;
-  width: 60%;
+  width: 85%;
   border-radius: 5px;
 }
 
@@ -55,5 +55,12 @@
 @media (min-width: 576px) {
   .comparison-img-box {
     flex-direction: row;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .tech-img-box img {
+    width: 65%;
   }
 }
