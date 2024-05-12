@@ -154,6 +154,7 @@ main p {
   width: 100%;
   display: inline-flex;
   justify-content: end;
+  margin-bottom: 6px;
   font-weight: 400;
   font-size: 0.8rem;
   font-style: italic;
