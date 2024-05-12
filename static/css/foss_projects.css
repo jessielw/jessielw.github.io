@@ -30,8 +30,10 @@
 }
 
 .tech-img-box img {
+  flex: 1;
   height: auto;
   width: 85%;
+  object-fit: contain;
   border-radius: 5px;
 }
 
@@ -62,5 +64,6 @@
 @media (min-width: 768px) {
   .tech-img-box img {
     width: 65%;
+    max-height: 700px;
   }
 }
