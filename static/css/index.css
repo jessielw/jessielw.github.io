@@ -161,6 +161,10 @@ main p {
   color: var(--body-text-color);
 }
 
+.bold {
+  font-weight: 600;
+}
+
 /* This is the default above */
 /* Extra small devices (phones, 576px and down) */
 /* @media (max-width: 576px) {
